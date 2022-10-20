@@ -1,11 +1,14 @@
+import { Header } from './components/Header/Header'
+import {CardProfile} from './components/CardProfile/CardProfile'
 import './styles/global.css'
 
 export function App() {
   
 
   return (
-    <div className='w-10 h-10 bg-slate-600'>
-      <h1 className='font-sans hover:color-blue'> Hello World </h1>
+    <div className='bg-gray1'>
+      <Header/>
+      <CardProfile />
 
     </div>
   )
