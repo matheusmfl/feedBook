@@ -11,8 +11,9 @@ export function App() {
       <Header/>
       <main className='flex gap-8 mt-8'>
       <Sidebar />
-      
+        <div className=''>
         <Posts />
+        </div>
       </main>
 
     </div>
