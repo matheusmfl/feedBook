@@ -25,6 +25,9 @@ module.exports = {
       fontFamily: {
         sans: 'Roboto, sans-serif'
       },
+      backgroundImage: {
+        'capa': "url('assets/capa-img.jpg')",
+      }
     },
   },
   plugins: [],

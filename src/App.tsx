@@ -1,5 +1,6 @@
 import { Header } from './components/Header/Header'
-import {CardProfile} from './components/CardProfile/CardProfile'
+import { Posts } from './components/Posts/Posts'
+import {Sidebar} from './components/Sidebar/Sidebar'
 import './styles/global.css'
 
 export function App() {
@@ -8,7 +9,11 @@ export function App() {
   return (
     <div className='bg-gray1'>
       <Header/>
-      <CardProfile />
+      <main className='flex gap-8 mt-8'>
+      <Sidebar />
+      
+        <Posts />
+      </main>
 
     </div>
   )
