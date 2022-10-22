@@ -20,6 +20,7 @@ module.exports = {
       'gray7' : '#E1E1E6',
       'white' : '#FFFFFF',
       'red-danger' : '#F75A68',
+      'gray8' : '#29292E'
     },
     extend: {
       fontFamily: {
