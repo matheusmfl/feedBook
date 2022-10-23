@@ -4,7 +4,6 @@ import { ImputPost } from "./ImputPost";
 import { ProfilePosts } from "./ProfilePosts";
 import { TextPost } from "./TextPost"; 
 import {ReactNode} from 'react'
-
     
 
 interface propsPost {
@@ -13,6 +12,8 @@ interface propsPost {
     profession: string,
     link: string,
     content: ReactNode
+    nameComment?: string,
+    textComment?: ReactNode
 
 }
 
@@ -21,12 +22,13 @@ interface propsPost {
 
 
 
-export function Posts({url, name, profession, link, content}: propsPost){
+export function Posts({url, name, profession, link, content, nameComment, textComment}: propsPost){
+    
+    const hasComment = [nameComment]
     return(
-        
+            
 
                     <div className="p-10 max-w-[832px] bg-gray2 rounded-lg mb-8">
-                    
                     <ProfilePosts
             url={url}
             name={name}
@@ -43,7 +45,19 @@ export function Posts({url, name, profession, link, content}: propsPost){
             <footer>
                 <ImputPost  />
             </footer>
-            <Comment/>
+            
+            <div>
+            {
+                hasComment.map(comment =>{
+                    if (comment !== undefined){
+                        return(<Comment 
+                        name={nameComment}
+                        text={textComment}
+                        />)}
+                })
+            }
+            
+            </div>
                     </div>
         
     )
