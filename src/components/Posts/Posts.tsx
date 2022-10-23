@@ -43,22 +43,9 @@ export function Posts({url, name, profession, link, content, nameComment, textCo
                 </main>
     
             <footer>
-                <ImputPost  />
+                <ImputPost name={nameComment} text={textComment} />
             </footer>
-            
-            <div>
-            {
-                hasComment.map(comment =>{
-                    if (comment !== undefined){
-                        return(<Comment 
-                        name={nameComment}
-                        text={textComment}
-                        />)}
-                })
-            }
-            
-            </div>
-                    </div>
+        </div>
         
     )
 
