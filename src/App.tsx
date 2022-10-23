@@ -28,37 +28,37 @@ export const posts = [
     ],
     link: "github.com/matheusmfl",
     asComment: {
-        name: "Marcelo Amorim",
+        name:"Marcelo Amorim",
         comment: "Parabéns, muito bom !",
       },
     },
-    
 
-  {
-    id: 2,
-    author: {
-      url: "https://avatars.githubusercontent.com/u/92957086?v=4",
-      name: "Marcelo Amorim",
-      profession: "Dev FrontEnd",
-    },
-    content: [
-      {
-        type: "paragrafh",
-        value: "Fala galeraa 👋",
+    {
+      id: 1,
+      author: {
+        url: "https://avatars.githubusercontent.com/u/92957086?v=4",
+        name: "Matheus Fonteles",
+        profession: "Dev FrontEnd",
       },
-      {
-        type: "paragrafh",
-        value: " Acabei de subir mais um projeto no meu portifa.",
-      },
-      {
-        type: "paragrafh",
-        value:
-          " É um projeto que fiz no Ignite Return,evento da Rocketseat. O nome do projeto é Feed Book! 🚀",
-      },
-    ],
-    link: "github.com/matheusmfl",
-
-  },
+      content: [
+        {
+          type: "paragrafh",
+          value: "Fala galeraa 👋",
+        },
+        {
+          type: "paragrafh",
+          value: " Acabei de subir mais um projeto no meu portifa.",
+        },
+        {
+          type: "paragrafh",
+          value:
+            " É um projeto que fiz no Ignite Return,evento da Rocketseat. O nome do projeto é Feed Book! 🚀",
+        },
+      ],
+      link: "github.com/matheusmfl",
+      
+        
+      }
 ];
 
 

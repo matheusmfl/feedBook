@@ -6,6 +6,7 @@ import { TextPost } from "./TextPost";
 import {ReactNode} from 'react'
     
 
+
 interface propsPost {
     url: string,
     name: string,
@@ -24,7 +25,6 @@ interface propsPost {
 
 export function Posts({url, name, profession, link, content, nameComment, textComment}: propsPost){
     
-    const hasComment = [nameComment]
     return(
             
 
